@@ -40,7 +40,8 @@ mod tests {
     use super::*;
 
     fn example() -> String {
-        prepare_example("1000
+        prepare_example(
+            "1000
             2000
             3000
 
@@ -53,7 +54,8 @@ mod tests {
 
             7000
             8000
-            9000")
+            9000",
+        )
     }
 
     #[test]
@@ -65,5 +67,4 @@ mod tests {
     fn second_works() {
         assert_eq!(second_solution(example()), 45000);
     }
-
 }

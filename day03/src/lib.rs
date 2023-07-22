@@ -28,5 +28,4 @@ mod tests {
     fn part2_works() {
         assert_eq!(part2_solution(example()), "2");
     }
-
 }

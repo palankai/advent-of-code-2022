@@ -1,4 +1,3 @@
-
 pub fn part1_solution(content: String) -> String {
     "".to_string()
 }
@@ -25,13 +24,7 @@ mod tests {
     #[ignore]
     fn part2_works() {
         let input = std::fs::read_to_string("input.txt").unwrap();
-        assert_eq!(
-            part2_solution(example()),
-            crate::part2_solution(example())
-        );
-        assert_eq!(
-            part2_solution(input.clone()),
-            crate::part2_solution(input)
-        );
+        assert_eq!(part2_solution(example()), crate::part2_solution(example()));
+        assert_eq!(part2_solution(input.clone()), crate::part2_solution(input));
     }
 }
