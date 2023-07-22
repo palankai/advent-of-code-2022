@@ -1,0 +1,7 @@
+use {{package}}::part1_solution;
+
+fn main() {
+    let content = std::fs::read_to_string("{{package}}/input.txt").unwrap();
+    let res = part1_solution(content);
+    println!("Result: {:?}", res);
+}
