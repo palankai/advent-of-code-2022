@@ -49,7 +49,7 @@ pub fn part2_solution(content: String) -> String {
     res.to_string()
 }
 
-fn char_to_u8(c: char) -> u8 {
+pub fn char_to_u8(c: char) -> u8 {
     let value = c as u8;
     if value >= 97 {
         value - 96
